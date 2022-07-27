@@ -1,0 +1,139 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+
+
+
+.root{
+	-fx-background-image: url("images/hosp1.jpg");
+	-fx-font-family: 'Segoe UI';
+	-fx-text-fill: black;
+	-fx-background-repeat: no-repeat;
+	-fx-background-position: center;
+  	
+  	-fx-background-size: cover;
+  	-fx-background-color: #d3d3d3;
+  	
+}
+#title{
+	-fx-background-color:  #5f9ea0;
+	-fx-text-alignment: center;
+	-fx-border-radius: 0;
+    -fx-background-radius: 0;
+    -fx-text-fill:white;
+}
+
+.button{
+	-fx-text-fill: black;
+    -fx-background-color: #e7e7e7;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-padding: 10;
+    /*-fx-background-color: transparent;*/
+    -fx-border-color: transparent, black;
+    -fx-border-width: 1, 0.5;
+    -fx-font-size: 10;
+    -fx-font-weight:bold;
+    /*-fx-effect:dropshadow;*/
+    
+}
+
+.list-view {
+    -fx-background-radius: 20;
+}
+
+.list-cell, .list-cell::focused {
+    -fx-border-radius: 20;
+   
+}
+.date-view {
+   -fx-background-radius: 20; 
+    
+}
+
+.date-cell, .date-cell::focused {
+    -fx-border-radius: 20; 
+    
+}
+
+.text-area {
+	-fx-border-color: transparent, black;
+	-fx-border-radius: 20;
+    -fx-background-radius: 20;
+   
+}
+.text-area .scroll-pane {
+    -fx-border-color: transparent;
+	-fx-border-radius: 20;
+    -fx-background-radius: 20;
+}
+.text-area .scroll-pane .viewport{
+    -fx-border-color: transparent;
+	-fx-border-radius: 20;
+    -fx-background-radius: 20;
+}
+.text-area .scroll-pane .content{
+    -fx-border-color: transparent;
+	-fx-border-radius: 20;
+    -fx-background-radius: 20;
+}
+
+.button:hover {
+    -fx-background-color: #d3d3d3;
+    -fx-text-fill: black;
+    
+}
+
+.label{
+	-fx-font-weight:bold;
+	-fx-font-size: 10;
+	-fx-border-radius: 20;
+    -fx-background-radius: 20;
+    
+}
+
+
+.text-field {
+	-fx-border-color: transparent, black;
+	-fx-border-radius: 20;
+    -fx-background-radius: 20;
+    
+}
+#faketextfield {
+	-fx-border-color: transparent, black;
+	-fx-border-radius: 20;
+    -fx-background-radius: 20;
+    -fx-background-color:white;
+    
+    
+}
+.date-picker{
+	-fx-border-color: transparent, black;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+    
+}
+
+
+.combo-box> .arrow-button {
+	-fx-border-color: transparent, black;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+   
+}
+
+.combo-box {
+	-fx-border-color: transparent, black;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+   
+}
+
+.date-picker > .arrow-button {
+    -fx-background-radius: 0 10 10 0; 
+}
+
+
+.button:pressed {
+    -fx-background-color: black;
+    -fx-text-fill: white;
+}

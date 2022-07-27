@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="631.0" prefWidth="580.0" stylesheets="@application.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerInserireSegnalazione">
+   <children>
+      <AnchorPane layoutX="377.0" layoutY="496.0">
+         <children>
+            <TextField fx:id="faketextfield" disable="true" editable="false" layoutX="-10.0" layoutY="-70.0" opacity="0.5" prefHeight="186.0" prefWidth="189.0">
+               <effect>
+                  <DropShadow />
+               </effect></TextField>
+            <Button fx:id="confermaButton" layoutX="-3.0" layoutY="69.0" mnemonicParsing="false" onAction="#confermaSegnalazione" prefHeight="35.0" prefWidth="174.0" text="CONFERMA" />
+            <Button layoutX="-3.0" layoutY="26.0" mnemonicParsing="false" onAction="#aggiungiVaccinazione" prefHeight="17.0" prefWidth="174.0" text="AGGIUNGI VACCINAZIONE" />
+            <Button layoutX="-3.0" layoutY="-18.0" mnemonicParsing="false" onAction="#reset" prefHeight="36.0" prefWidth="174.0" text="RESET" />
+            <Button layoutX="-3.0" layoutY="-60.0" mnemonicParsing="false" onAction="#annulla" prefHeight="35.0" prefWidth="174.0" text="ANNULLA" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="35.0" layoutY="75.0">
+         <children>
+            <TextField fx:id="faketextfield" disable="true" editable="false" layoutX="-10.0" layoutY="-6.0" opacity="0.5" prefHeight="329.0" prefWidth="538.0">
+               <effect>
+                  <DropShadow />
+               </effect></TextField>
+            <DatePicker fx:id="dataReazione" layoutX="79.0" layoutY="14.0" prefHeight="33.0" prefWidth="178.0" promptText="Data reazione" />
+            <ComboBox fx:id="combSceltaReazione" editable="true" layoutX="79.0" layoutY="64.0" prefHeight="28.0" prefWidth="178.0" promptText="Reazione" />
+            <ComboBox fx:id="combGravitaReazione" editable="true" layoutX="79.0" layoutY="119.0" prefHeight="31.0" prefWidth="178.0" promptText="Gravità" />
+            <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="26.0" layoutY="61.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/reazione.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="35.0" fitWidth="36.0" layoutX="30.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/data.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="36.0" fitWidth="45.0" layoutX="27.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/riskLevel.png" />
+               </image>
+            </ImageView>
+            <TextArea fx:id="descrizioneReazField" layoutX="26.0" layoutY="162.0" prefHeight="151.0" prefWidth="480.0" promptText="Descrizione" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="35.0" layoutY="413.0">
+         <children>
+            <TextField fx:id="faketextfield" disable="true" editable="false" layoutX="-12.0" layoutY="-7.0" opacity="0.5" prefHeight="202.0" prefWidth="288.0">
+               <effect>
+                  <DropShadow />
+               </effect></TextField>
+            <DatePicker fx:id="dataVaccinazione" layoutX="73.0" layoutY="4.0" prefHeight="33.0" prefWidth="178.0" promptText="Data vaccinazione" />
+            <ComboBox fx:id="combVaccino" editable="true" layoutX="73.0" layoutY="53.0" prefHeight="28.0" prefWidth="178.0" promptText="Vaccino" />
+            <ComboBox fx:id="combDose" editable="true" layoutX="73.0" layoutY="100.0" prefHeight="28.0" prefWidth="178.0" promptText="Dose" />
+            <TextField fx:id="sedeField" layoutX="73.0" layoutY="149.0" prefHeight="26.0" prefWidth="178.0" promptText="Sede" />
+            <ImageView fitHeight="36.0" fitWidth="36.0" layoutX="22.0" layoutY="4.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/data.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="33.0" fitWidth="36.0" layoutX="22.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/vaccine.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="37.0" fitWidth="36.0" layoutX="22.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/dose.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="31.0" fitWidth="36.0" layoutX="25.0" layoutY="149.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@images/sede.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <TextField fx:id="title" alignment="CENTER" editable="false" layoutX="-4.0" prefHeight="59.0" prefWidth="589.0" stylesheets="@application.css" text="SEGNALAZIONE RELATIVA AL PAZIENTE  ">
+         <font>
+            <Font name="Baskerville Old Face" size="22.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>
